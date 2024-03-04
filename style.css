@@ -5,9 +5,40 @@
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50rem;
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+
+.reset {
+    height: 10hv;
+    width: 15vh;
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+.blackBrush {
+    height: 10hv;
+    width: 15hv;
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+.multicoloredBrush {
+    height: 10hv;
+    width: 15hv;
+    background-color: aqua;
+    border-radius: 10%;
 }
 
 .container {
