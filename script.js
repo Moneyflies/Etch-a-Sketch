@@ -8,13 +8,24 @@ const multicoloredBrushButton = document.querySelector('.multicoloredBrush');
 container.style.gridTemplateColumns = `repeat(${pixelCount}, 1fr)`;
 container.style.gridTemplateRows = `repeat(${pixelCount}, 1fr)`;
 
+resetButton.addEventListener('click', () => {
+    window.location.href = window.location.href;
+});
+
 for (let i = 0; i < pixelCount; i++) {
     for (let j = 0; j < pixelCount; j++) {
         const pixel = document.createElement('div');
         pixel.classList.add('pixel');
         container.appendChild(pixel);
-        pixel.addEventListener("mouseover", () => {
-            setColor(pixel);
+        multicoloredBrushButton.addEventListener('click', () => {
+            pixel.addEventListener("mouseover", () => {
+                setColor(pixel);
+            })
+        });
+        blackBrushButton.addEventListener('click', () => {
+            pixel.addEventListener("mouseover", () => {
+                pixel.style.background = '#181a1b';
+            })
         });
     }
 }
