@@ -6,43 +6,66 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
 .buttons {
+    color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 50rem;
+    margin: 0 auto;
+    gap: 20px;
     text-decoration: none;
+}
+
+.buttons button {
+    display: flex;
     border: none;
-    color: white;
+    font-weight: bold;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.buttons .blackBrush {
+    color: #000;
+}
+
+.buttons .reset {
+    color: #000;
+}
+
+.buttons .multicoloredBrush {
+    color: #000;
 }
 
 .reset {
-    height: 10hv;
-    width: 15vh;
+    height: 20px;
+    width: 110px;
     background-color: aqua;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .blackBrush {
-    height: 10hv;
-    width: 15hv;
+    height: 20px;
+    width: 110px;
     background-color: aqua;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .multicoloredBrush {
-    height: 10hv;
-    width: 15hv;
+    height: 20px;
+    width: 110px;
     background-color: aqua;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .container {
     display: grid;
+    margin: 0 auto;
 }
 
 .pixel {

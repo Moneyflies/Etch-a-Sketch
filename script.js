@@ -1,6 +1,9 @@
 const container = document.querySelector('.container');
 const colors = ['blue', 'red', 'green', 'purple', 'grey', 'white', 'pink', 'yellow', 'brown', 'aqua', 'lime'];
 let pixelCount = +prompt('Choose size grid: ', '16');
+const resetButton = document.querySelector('.reset');
+const blackBrushButton = document.querySelector('.blackBrush');
+const multicoloredBrushButton = document.querySelector('.multicoloredBrush');
 
 container.style.gridTemplateColumns = `repeat(${pixelCount}, 1fr)`;
 container.style.gridTemplateRows = `repeat(${pixelCount}, 1fr)`;
